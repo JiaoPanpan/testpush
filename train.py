@@ -69,6 +69,7 @@ def main():
 
     # change fc layer structure
     in_channel = net.fc.in_features
+    #这里的5指的是类的个数
     net.fc = nn.Linear(in_channel, 5)
     net.to(device)
 
